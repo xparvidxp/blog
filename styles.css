@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    --bg: black;
+    --text: white;
+
+    font-family: 'TT_Commons_Pro_Trial_Expanded_Normal.ttf', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+p {
+    display: none;
+}
+
+button {
+    font: inherit;
+}
+
+.box-button {
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.box-button:focus + p {
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-logo {
+    width: 100px;
+    aspect-ratio: 1/1;
+}
+
+.box {
+    background-color: rgb(81, 81, 81);
+    border-radius: 5px;
+
+    width:fit-content;
+    height:fit-content;
+    margin: 1px;
+
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+} 
+
+
+/* Bronnen: 
+https://svelte.dev/playground/fbcea9d987724d538294a47e981d7b68?version=5.55.5 
+
+*/
